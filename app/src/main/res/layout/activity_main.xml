@@ -2,19 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@android:color/white">
+    android:background="@drawable/background2">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/titleImageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@mipmap/main_title"
+        android:src="@drawable/logo"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
-        android:contentDescription="Signals from Mars"/>
+        android:contentDescription="Marketing Adventure!"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
@@ -24,7 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@android:color/white"
+        android:background="@android:color/black"
         android:textColor="#FF3A8AEC"/>
 
     <EditText
@@ -37,5 +36,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:hint="Enter your name to begin"
-        android:maxLength="30"/>
+        android:maxLength="30"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerVertical="true"
+        android:hint="Welcome to 24Notion's Story Time Adventure! Enter your name to get started."
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
 </RelativeLayout>

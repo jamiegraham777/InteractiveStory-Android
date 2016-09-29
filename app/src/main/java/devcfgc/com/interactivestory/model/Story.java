@@ -3,7 +3,7 @@ package devcfgc.com.interactivestory.model;
 import devcfgc.com.interactivestory.R;
 
 /**
- * Created by devcfgc on 05/02/15.
+ * Created by jamiegraham777 on 9/15/16
  */
 public class Story {
     private Page[] mPages;
@@ -13,37 +13,49 @@ public class Story {
 
         mPages[0] = new Page(
                 R.mipmap.page0,
-                "On your return trip from studying Saturn's rings, you hear a distress signal that seems to be coming from the surface of Mars. It's strange because there hasn't been a colony there in years. Even stranger, it's calling you by name: \"Help me, %1$s, you're my only hope.\"",
-                new Choice("Stop and investigate", 1),
-                new Choice("Continue home to Earth", 2));
+                "Hello! My name is Alex! I am working on the 24Notion Team to provide creative marketing tactis to upcoming businesses! It’s my job to make our client’s product known to the world. I am excited to start working with you! What client are you interested in helping most?\"",
+                new Choice("Start-up Company", 1),
+                new Choice("Freelance", 8));
 
         mPages[1] = new Page(
                 R.mipmap.page1,
-                "You deftly land your ship near where the distress signal originated. You didn't notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century.",
-                new Choice("Explore the cave", 3),
-                new Choice("Explore the rover", 4));
+                "I’m working with a brand new start-up trying to market from the ground up. Will you help me?",
+                new Choice("Absolutely!", 2),
+                new Choice("But… I don’t know anything about starting a company?", 3));
 
         mPages[2] = new Page(
                 R.mipmap.page2,
-                "You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low.",
-                new Choice("Head back to Mars to investigate", 4),
-                new Choice("Continue home to Earth", 6));
+                "Awesome! Let’s get started. Our client is a software engineer Jessie here in Portland, Oregon. She created a mobile application to connect tourists and local businesses abroad. They asked is to promote:\n" +
+                        "\uF0A7\tOnline presence\n" +
+                        "\uF0A7\tScaling company transition tactics\n" +
+                        "\uF0A7\tEvent/conference engagement\n" +
+                "Ready to get started?",
+                new Choice("Yes!", 4),
+                new Choice("Can I switch clients?", 6));
 
         mPages[3] = new Page(
                 R.mipmap.page3,
-                "Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there's a very faint light up ahead.",
-                new Choice("Refill at ship and explore the rover", 4),
-                new Choice("Continue towards the faint light", 5));
+                "Don’t worry! Now is the time to learn! Let’s get started. Our client is a software engineer Jessie here in Portland, Oregon. She created a mobile application to connect tourists and local businesses abroad. They asked is to promote:\n" +
+                        "\" +\n" +
+                        "                        \"\\uF0A7\\tOnline presence\\n\" +\n" +
+                        "                        \"\\uF0A7\\tScaling company transition tactics\\n\" +\n" +
+                        "                        \"\\uF0A7\\tEvent/conference engagement\\n\" +\n" +
+                        "                \"Ready to get started?\",",
+                new Choice("Yes!", 4),
+                new Choice("Can I switch clients?", 6));
 
         mPages[4] = new Page(
                 R.mipmap.page4,
-                "The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"%1$s, come to 28.543436, -81.369031.\" Those coordinates aren't far, but you don't know if your oxygen will last there and back.",
-                new Choice("Explore the coordinates", 5),
-                new Choice("Return to Earth", 6));
+                "Remember that you need to catch creativity stars in order progress creative thinking in the game! There is creativity all around you. Click on the catch creativity button to catch creativity!\n" +
+                        "Tip: Find a really cool spark of creativity? Screenshot photos of creativity you find to post on social media with that hashtag #24NotionCreativity to win give away prizes by 24Notion!\n",
+                new Choice("Got it!", 5),
+                new Choice("Can I catch creativity right now?", 6));
 
         mPages[5] = new Page(
                 R.mipmap.page5,
-                "After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, %1$s-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth.");
+                "4)First, let’s improve the company’s online presence. This includes their website, search engine optimization, and social media. Which one do you want to work on?",
+                  new Choice("Website design! (Requires 10 creativity points)", 5),
+                new Choice("Social Media! (15 creativity points)", 6));
 
         mPages[6] = new Page(
                 R.mipmap.page6,
