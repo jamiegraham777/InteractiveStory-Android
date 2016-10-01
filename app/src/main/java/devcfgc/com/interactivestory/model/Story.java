@@ -4,6 +4,7 @@ import devcfgc.com.interactivestory.R;
 
 /**
  * Created by jamiegraham777 on 9/15/16
+ * Designed off of TreeHouse's interactive story layout
  */
 public class Story {
     private Page[] mPages;
@@ -13,9 +14,9 @@ public class Story {
 
         mPages[0] = new Page(
                 R.mipmap.page0,
-                "Hello! My name is Alex! I am working on the 24Notion Team to provide creative marketing tactis to upcoming businesses! It’s my job to make our client’s product known to the world. I am excited to start working with you! What client are you interested in helping most?\"",
+                "Hello %1$s! My name is Alex! I am working on the 24Notion Team to provide creative marketing tactis to upcoming businesses! It’s my job to make our client’s product known to the world. I am excited to start working with you! What client are you interested in helping most?\"",
                 new Choice("Start-up Company", 1),
-                new Choice("Freelance", 8));
+                new Choice("Freelance", 1));
 
         mPages[1] = new Page(
                 R.mipmap.page1,
@@ -59,7 +60,34 @@ public class Story {
 
         mPages[6] = new Page(
                 R.mipmap.page6,
-                "You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate...");
+                "Awesome! There are a lot of factors that go into website design besides just the programming. It’s important to consider navigation, functionally, and engagement when designing the layout. What kind of style do you think would look best on the website?",
+                new Choice("Simple, modern, chic", 5),
+                new Choice("Bright, vibrant, informative", 7));
+        mPages[7] = new Page(
+                R.mipmap.page7,
+                "x",
+                new Choice("x", 12),
+                new Choice("y", 13));
+        mPages[8] = new Page(
+                R.mipmap.page7,
+                "x",
+                new Choice("x", 12),
+                new Choice("y", 13));
+        mPages[7] = new Page(
+                R.mipmap.page7,
+                "x",
+                new Choice("x", 12),
+                new Choice("y", 13));
+        mPages[7] = new Page(
+                R.mipmap.page7,
+                "x",
+                new Choice("x", 12),
+                new Choice("y", 13));
+        mPages[7] = new Page(
+                R.mipmap.page7,
+                "x",
+                new Choice("x", 12),
+                new Choice("y", 13));
     }
 
     public Page getPage(int pageNumber) {

@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Story.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(204,120,50); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(98,151,85); font-style: italic; }
+.s3 { color: rgb(104,151,187); }
+.s4 { color: rgb(106,135,89); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Story.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">devcfgc.com.interactivestory.model</span><span class="s0">;</span><span class="s1"> 
+ 
+</span><span class="s0">import </span><span class="s1">devcfgc.com.interactivestory.R</span><span class="s0">;</span><span class="s1"> 
+ 
+</span><span class="s2">/** 
+ * Created by jamiegraham777 on 9/15/16 
+ * Designed off of TreeHouse's interactive story layout 
+ */</span><span class="s1"> 
+</span><span class="s0">public class </span><span class="s1">Story { 
+    </span><span class="s0">private </span><span class="s1">Page[] mPages</span><span class="s0">;</span><span class="s1"> 
+ 
+    </span><span class="s0">public </span><span class="s1">Story() { 
+        mPages = </span><span class="s0">new </span><span class="s1">Page[</span><span class="s3">7</span><span class="s1">]</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">0</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page0</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;Hello, %1$s! My name is Alex! I am working on the 24Notion Team to provide creative marketing tactis to upcoming businesses! It’s my job to make our client’s product known to the world. I am excited to start working with you! What client are you interested in helping most?</span><span class="s0">\&quot;</span><span class="s4">&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Start-up Company&quot;</span><span class="s0">, </span><span class="s3">1</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Freelance&quot;</span><span class="s0">, </span><span class="s3">3</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">1</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page1</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;I’m working with a brand new start-up trying to market from the ground up. Will you help me?&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Absolutely!&quot;</span><span class="s0">, </span><span class="s3">2</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;But… I don’t know anything about starting a company?&quot;</span><span class="s0">, </span><span class="s3">3</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">2</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page2</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;Awesome! Let’s get started. Our client is a software engineer Jessie here in Portland, Oregon. She created a mobile application to connect tourists and local businesses abroad. They asked is to promote:</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;</span><span class="s0">\uF0A7\t</span><span class="s4">Online presence</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;</span><span class="s0">\uF0A7\t</span><span class="s4">Scaling company transition tactics</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;</span><span class="s0">\uF0A7\t</span><span class="s4">Event/conference engagement</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                </span><span class="s4">&quot;Ready to get started?&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Yes!&quot;</span><span class="s0">, </span><span class="s3">4</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Can I switch clients?&quot;</span><span class="s0">, </span><span class="s3">6</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">3</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page3</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;Don’t worry! Now is the time to learn! Let’s get started. Our client is a software engineer Jessie here in Portland, Oregon. She created a mobile application to connect tourists and local businesses abroad. They asked is to promote:</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;</span><span class="s0">\&quot;</span><span class="s4"> +</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;                        </span><span class="s0">\&quot;\\</span><span class="s4">uF0A7</span><span class="s0">\\</span><span class="s4">tOnline presence</span><span class="s0">\\</span><span class="s4">n</span><span class="s0">\&quot;</span><span class="s4"> +</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;                        </span><span class="s0">\&quot;\\</span><span class="s4">uF0A7</span><span class="s0">\\</span><span class="s4">tScaling company transition tactics</span><span class="s0">\\</span><span class="s4">n</span><span class="s0">\&quot;</span><span class="s4"> +</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;                        </span><span class="s0">\&quot;\\</span><span class="s4">uF0A7</span><span class="s0">\\</span><span class="s4">tEvent/conference engagement</span><span class="s0">\\</span><span class="s4">n</span><span class="s0">\&quot;</span><span class="s4"> +</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;                </span><span class="s0">\&quot;</span><span class="s4">Ready to get started?</span><span class="s0">\&quot;</span><span class="s4">,&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Yes!&quot;</span><span class="s0">, </span><span class="s3">4</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Can I switch clients?&quot;</span><span class="s0">, </span><span class="s3">6</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">4</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page4</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;Remember that you need to catch creativity stars in order progress creative thinking in the game! There is creativity all around you. Click on the catch creativity button to catch creativity!</span><span class="s0">\n</span><span class="s4">&quot; </span><span class="s1">+ 
+                        </span><span class="s4">&quot;Tip: Find a really cool spark of creativity? Screenshot photos of creativity you find to post on social media with that hashtag #24NotionCreativity to win give away prizes by 24Notion!</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Got it!&quot;</span><span class="s0">, </span><span class="s3">5</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Can I catch creativity right now?&quot;</span><span class="s0">, </span><span class="s3">6</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">5</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page5</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;4)First, let’s improve the company’s online presence. This includes their website, search engine optimization, and social media. Which one do you want to work on?&quot;</span><span class="s0">,</span><span class="s1"> 
+                  </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Website design! (Requires 10 creativity points)&quot;</span><span class="s0">, </span><span class="s3">5</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Social Media! (15 creativity points)&quot;</span><span class="s0">, </span><span class="s3">6</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+ 
+        mPages[</span><span class="s3">6</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page6</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;Awesome! There are a lot of factors that go into website design besides just the programming. It’s important to consider navigation, functionally, and engagement when designing the layout. What kind of style do you think would look best on the website?&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Simple, modern, chic&quot;</span><span class="s0">, </span><span class="s3">5</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;Bright, vibrant, informative&quot;</span><span class="s0">, </span><span class="s3">7</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+        mPages[</span><span class="s3">7</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page7</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;x&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;x&quot;</span><span class="s0">, </span><span class="s3">12</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;y&quot;</span><span class="s0">, </span><span class="s3">13</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+        mPages[</span><span class="s3">8</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page7</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;x&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;x&quot;</span><span class="s0">, </span><span class="s3">12</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;y&quot;</span><span class="s0">, </span><span class="s3">13</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+        mPages[</span><span class="s3">7</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page7</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;x&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;x&quot;</span><span class="s0">, </span><span class="s3">12</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;y&quot;</span><span class="s0">, </span><span class="s3">13</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+        mPages[</span><span class="s3">7</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page7</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;x&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;x&quot;</span><span class="s0">, </span><span class="s3">12</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;y&quot;</span><span class="s0">, </span><span class="s3">13</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+        mPages[</span><span class="s3">7</span><span class="s1">] = </span><span class="s0">new </span><span class="s1">Page( 
+                R.mipmap.page7</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s4">&quot;x&quot;</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;x&quot;</span><span class="s0">, </span><span class="s3">12</span><span class="s1">)</span><span class="s0">,</span><span class="s1"> 
+                </span><span class="s0">new </span><span class="s1">Choice(</span><span class="s4">&quot;y&quot;</span><span class="s0">, </span><span class="s3">13</span><span class="s1">))</span><span class="s0">;</span><span class="s1"> 
+    } 
+ 
+    </span><span class="s0">public </span><span class="s1">Page getPage(</span><span class="s0">int </span><span class="s1">pageNumber) { 
+        </span><span class="s0">return </span><span class="s1">mPages[pageNumber]</span><span class="s0">;</span><span class="s1"> 
+    } 
+}</span></pre>
+</body>
+</html>

@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
                 startStory(name);
             }
         });
+
     }
 
     private void startStory(String name) {

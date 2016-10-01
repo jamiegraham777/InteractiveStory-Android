@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,8 +25,10 @@ public class StoryActivity extends Activity {
     private TextView mTextView;
     private Button mChoice1;
     private Button mChoice2;
+ //   private Button mCreativity;
     private String mName;
     private Page mCurrentPage;
+    private EditText mNameField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,8 @@ public class StoryActivity extends Activity {
         mTextView = (TextView)findViewById(R.id.storyTextView);
         mChoice1 = (Button)findViewById(R.id.choiceButton1);
         mChoice2 = (Button)findViewById(R.id.choiceButton2);
+   //     mCreativity = (Button)findViewById(R.id.creativityButton);
+        mNameField = (EditText)findViewById(R.id.nameEditText);
 
         loadPage(0);
     }
@@ -89,6 +94,19 @@ public class StoryActivity extends Activity {
                 }
             });
         }
-    }
+
+   // mCreativity.setOnClickListener(new View.OnClickListener() {
+
+//        public void onClick(View v) {
+//            String name = mNameField.getText().toString();
+//            startStory(name);
+//        }
+//    });
+   }
+//    private void startStory(String name) {
+//        Intent intent = new Intent(this, StoryActivity.class);
+//        intent.putExtra(getString(R.string.key_name), name);
+//        startActivity(intent);
+//    }
 
 }
