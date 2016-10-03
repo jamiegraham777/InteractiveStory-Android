@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="devcfgc.com.interactivestory" >
+    package="jamiegraham777.com.interactivestory" >
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:label="24Notion Story Adventure"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".ui.MainActivity"
+            android:name="jamiegraham777.com.interactivestory.ui.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -18,13 +18,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.StoryActivity"
+            android:name="jamiegraham777.com.interactivestory.ui.StoryActivity"
             android:label="@string/title_activity_story"
-            android:parentActivityName=".ui.MainActivity"
+            android:parentActivityName="jamiegraham777.com.interactivestory.ui.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.MainActivity" />
+                android:value="jamiegraham777.com.interactivestory.ui.MainActivity" />
         </activity>
     </application>
 

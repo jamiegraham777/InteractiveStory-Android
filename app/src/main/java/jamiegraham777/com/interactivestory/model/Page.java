@@ -1,4 +1,4 @@
-package devcfgc.com.interactivestory.model;
+package jamiegraham777.com.interactivestory.model;
 
 /**
  * Created by devcfgc on 05/02/15.

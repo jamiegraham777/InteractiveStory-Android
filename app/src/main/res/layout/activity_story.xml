@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="devcfgc.com.interactivestory.ui.StoryActivity"
+    tools:context="jamiegraham777.com.interactivestory.ui.StoryActivity"
     android:background="@android:color/white">
 
     <ImageView
@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low."
+        android:text="Hello! My name is Alex! I am working on the 24Notion Team to provide creative marketing tactics to up and coming businesses! It’s my job to make our clients’ products known to the world. I am excited to start working with you! "
         android:id="@+id/storyTextView"
         android:layout_below="@+id/storyImageView"
         android:layout_alignLeft="@+id/storyImageView"
@@ -44,7 +44,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continue home to Earth"
+        android:text="Great! What's next?"
         android:id="@+id/choiceButton1"
         android:layout_above="@+id/choiceButton2"
         android:layout_alignLeft="@+id/choiceButton2"

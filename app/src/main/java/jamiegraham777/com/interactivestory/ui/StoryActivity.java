@@ -1,4 +1,4 @@
-package devcfgc.com.interactivestory.ui;
+package jamiegraham777.com.interactivestory.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import devcfgc.com.interactivestory.R;
-import devcfgc.com.interactivestory.model.Page;
-import devcfgc.com.interactivestory.model.Story;
+import jamiegraham777.com.interactivestory.R;
+import jamiegraham777.com.interactivestory.model.Page;
+import jamiegraham777.com.interactivestory.model.Story;
 
 
 public class StoryActivity extends Activity {

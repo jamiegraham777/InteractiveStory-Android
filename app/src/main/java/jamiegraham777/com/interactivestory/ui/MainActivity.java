@@ -1,4 +1,4 @@
-package devcfgc.com.interactivestory.ui;
+package jamiegraham777.com.interactivestory.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import devcfgc.com.interactivestory.R;
+import jamiegraham777.com.interactivestory.R;
 
 
 public class MainActivity extends Activity {
