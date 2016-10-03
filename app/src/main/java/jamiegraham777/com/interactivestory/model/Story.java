@@ -60,32 +60,32 @@ public class Story {
                 new Choice("Bright, vibrant, informative", 7));
 
       mPages[5] = new Page(
-              R.drawable.tv,
+              R.drawable.portland,
               "Fantastic, here is an example of a web layout we could use: the 24Notion.tv website. We can pick out elements of the style and send them to the software development team to create a website based on our design!",
               new Choice("24Notion.net instead of .tv", 7),
                 new Choice("Great! What’s next?", 6));
         mPages[6] = new Page(
-                R.drawable.po,
+                R.drawable.portland,
                 "An important part of marketing is conducting a strong presence online to expand your community of clients! Social media is an effective way to help connect to your users to important information about your company. Which social media do you want to use?",
                 new Choice("Facebook", 8),
                 new Choice("Twitter", 9));
         mPages[7] = new Page(
-                R.drawable.net,
+                R.drawable.portland,
                 "Fantastic, here is an example of a web layout we could use: the 24Notion.net website. We can pick out elements of the style and send them to the software development team to create a website based on our design!",
                 new Choice("24Notion.tv instead of .net", 5),
                 new Choice("Great! What’s next?", 6));
         mPages[8] = new Page(
-                R.drawable.po,
+                R.drawable.portland,
                 "Facebook is easily designed for business usage. Using Ads and analytics can help you track your client base to better understand your audience and find your demographics. Facebook is a great location to host promotional events and advertise new product features.",
                 new Choice("What about Twitter?", 9),
                 new Choice("Great! What’s next?", 6));
         mPages[9] = new Page(
-                R.drawable.po,
+                R.drawable.portland,
                 "Twitter is a great method for reaching out to a large number of people and promoting your name. An effective method for expanding your twitter community is through following your clients and tracking which clients are most interested in your product in order to get a feel for your product.",
                 new Choice("What about Facebook?", 8),
                 new Choice("Great! What’s next?", 10));
         mPages[10] = new Page(
-                R.drawable.podt,
+                R.drawable.portland,
                 "Jesse’s company is coming along really well and is making a lot of progress! She obtained a lot of new clients this term. Using both social media and good web tactics can be strong promotional tactics for new start-ups. Next, we want to focus on scaling company transition tactics. It’s important to have a solid growth strategy for when moving forward with the company. Three important methods can help this process:\n" +
                         "•\tBegin functionalizing roles\n" +
                         "•\tTake care of your employees\n" +
@@ -94,12 +94,12 @@ public class Story {
                 new Choice("How does the functionalizing role model look?", 12),
                 new Choice("How do we take care of employees?", 11));
         mPages[11] = new Page(
-                R.drawable.podt,
+                R.drawable.portland,
                 "During a start-up, there tends to be a small team who takes on multiple responsibilities. But, as the company grows, it is important to specialize the employees’ tasks by divvying up responsibilities. Creating an effective role model which specific roles can help the company work together as a team. It is really important for a company to maintain good health and well-being of your employees. It is important to keep morale high- encourage vital employees to stay with the company and appreciate their hardwork while bringing in new team members.",
                 new Choice("Where do managers fit into this model?", 12),
                 new Choice("Interesting. What's next?", 13));
         mPages[12] = new Page(
-                R.drawable.podt,
+                R.drawable.portland,
                 "As the company grows, the employee base will grow and managers will become a crucial part of company development. It’s important to find good managers who empower their employees in multiple fields areas and can connect employees to another. Having a person higher up in management is important to make sure employment is working like an effective system and all employee have interesting challenges.",
                 new Choice("How does one take care of the employees?", 11),
                 new Choice("Great! What’s next?",   13));
@@ -109,7 +109,7 @@ public class Story {
 //                new Choice("What about Twitter?", 5),
 //                new Choice("Great! What’s next?", 6));
         mPages[13] = new Page(
-                R.drawable.build,
+                R.drawable.portland,
                 "Great! Jesse's company has gained so many new clients since we started marketing for them. There are several new methods to try to improve a company's outreach to potential consumers. Check out 24notion.tv and 24notion.net to find out more information on how to improve one's business.");
      // Freelance story
 //        mPages[9] = new Page(

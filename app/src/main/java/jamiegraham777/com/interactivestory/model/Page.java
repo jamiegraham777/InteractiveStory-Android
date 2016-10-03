@@ -1,8 +1,5 @@
 package jamiegraham777.com.interactivestory.model;
 
-/**
- * Created by devcfgc on 05/02/15.
- */
 public class Page {
     private int mImageId;
     private String mText;
